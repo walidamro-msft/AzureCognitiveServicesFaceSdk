@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AzureCognitiveServices.Tests" GeneratedClassName="AzureCognitiveServicesTestsSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AzureVisionFaceEndPoint" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://???.cognitiveservices.azure.com</Value>
+    </Setting>
+    <Setting Name="AzureVisionFaceApiKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">???</Value>
+    </Setting>
+    <Setting Name="AzureVisionFaceRecognitionModel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">recognition_04</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

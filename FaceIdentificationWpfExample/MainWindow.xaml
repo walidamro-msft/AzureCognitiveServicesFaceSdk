@@ -1,0 +1,17 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FaceIdentificationWpfExample"
+        xmlns:wct="clr-namespace:Microsoft.Toolkit.Wpf.UI.XamlHost;assembly=Microsoft.Toolkit.Wpf.UI.XamlHost" x:Class="FaceIdentificationWpfExample.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Closing="Window_Closing" Initialized="Window_Initialized">
+    <DockPanel>
+        <ComboBox DockPanel.Dock="Top" Height="25" Name="MyWebCams" MouseDoubleClick="MyWebCams_DoubleClick"></ComboBox>
+        <Button DockPanel.Dock="Left" Height="50" Click="OpenCameraButton_Click">Open Camera</Button>
+        <Button DockPanel.Dock="Right" Height="50" Click="StopCameraButton_Click">Stop Camera</Button>
+        <Button DockPanel.Dock="Top" Height="50" Click="EnrollPersonButton_Click">Enroll Person</Button>
+        <Button DockPanel.Dock="Bottom" Height="50" Click="IdentifyPersonButton_Click">Identify Person</Button>
+        <wct:WindowsXamlHost Name="MyCaptureElement" InitialTypeName="Windows.UI.Xaml.Controls.CaptureElement" />
+    </DockPanel>
+</Window>
